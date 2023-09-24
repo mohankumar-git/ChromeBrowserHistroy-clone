@@ -1,0 +1,84 @@
+* {
+  box-sizing: border-box;
+  margin: 0px;
+}
+
+.history-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  margin-bottom: 36px;
+}
+
+.time {
+  color: #64748b;
+  font-size: 12px;
+  font-family: 'Roboto';
+  font-weight: 600;
+}
+
+.site-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+  width: 100%;
+}
+
+.site-details {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.site-logo {
+  width: 30px;
+}
+
+.site-url {
+  margin-left: 10px;
+}
+.domain-name {
+  color: #475569;
+  font-size: 15px;
+  font-family: 'Roboto';
+  font-weight: 600;
+}
+
+.domain-url {
+  color: #64748b;
+  font-size: 14px;
+  font-family: 'Roboto';
+}
+
+.delete-button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 768px) {
+  .history-list {
+    flex-direction: row;
+    align-items: center;
+  }
+  .time {
+    font-size: 16px;
+    margin-right: 20px;
+    width: 100px;
+  }
+  .site-container {
+    margin-top: 8px;
+    margin-bottom: 8px;
+  }
+  .site-logo {
+    width: 40px;
+  }
+  .domain-name {
+    font-size: 17px;
+  }
+  .domain-url {
+    font-size: 16px;
+  }
+}

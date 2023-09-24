@@ -1,0 +1,107 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.app-container {
+  height: 100vh;
+}
+.header-container {
+  background-color: #3367d6;
+  padding: 20px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.histroy-logo {
+  width: 67px;
+  margin-right: 18px;
+}
+
+.search-container {
+  display: flex;
+  justify-content: center;
+}
+.search-icon {
+  width: 36px;
+  border: 1px solid #6697ff;
+  background-color: #2850a7;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  padding-left: 9px;
+  padding-right: 9px;
+}
+.input {
+  outline: none;
+  border: none;
+  background-color: #2850a7;
+  border: 1px solid #6697ff;
+  padding-left: 18px;
+  width: 200px;
+  color: #ffffff;
+  font-size: 14px;
+  font-family: 'Roboto';
+}
+
+.history-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.history-lists {
+  box-shadow: 16px 16px 16px 16px #ececec;
+  width: 90%;
+  border-radius: 4px;
+  margin-top: 24px;
+  padding-top: 13px;
+  padding-bottom: 15px;
+  padding-left: 14px;
+  padding-right: 14px;
+  list-style: none;
+  margin-bottom: 30px;
+}
+
+.empty-list-warning {
+  color: #64748b;
+  font-size: 18px;
+  font-family: 'Roboto';
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (min-width: 768px) {
+  .header-container {
+    padding: 20px 80px;
+  }
+  .search-container {
+    margin-right: 90px;
+  }
+  .search-icon {
+    width: 50px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .input {
+    width: 340px;
+  }
+  .histroy-logo {
+    width: 92px;
+  }
+  .empty-list-warning {
+    font-size: 24px;
+  }
+}
